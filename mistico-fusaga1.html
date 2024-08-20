@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Místico Fusaga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('local.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #FFFFFF;
+        }
+
+        /* Capa morada semitransparente */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(75, 0, 130, 0.8); /* Morado oscuro con 80% de opacidad */
+            z-index: -1; /* Coloca la capa detrás del contenido */
+        }
+
+        header, section, footer {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #E6E6FA; /* Texto de encabezados en morado claro */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF; /* Enlaces blancos */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #DDA0DD; /* Morado claro al pasar el cursor */
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #9932CC; /* Botón de llamada a la acción en morado */
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #BA55D3; /* Botón más claro al pasar el cursor */
+        }
+
+        .social-media img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .reserve-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .reservar-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: #e6005c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Místico Fusaga</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="formularioagenda.html" class="reservar-btn">Reservar Ahora</a>
+    </header>
+
+    <!-- Página de Inicio -->
+    <section id="inicio">
+        <div class="hero-image">
+            <h2>Bienvenidos a Místico Fusaga</h2>
+            <a href="#menu" class="cta-button">Ver Menú</a>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu">
+        <h2>Menú</h2>
+        <div class="menu-categories">
+            <div class="menu-category">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>
+                        <img src="cerezada.jpeg" alt="Cerezada" style="width:100px;height:100px;">
+                        <h4>Cerezada</h4>
+                        <p>Descripción breve del agua mineral.</p>
+                        <p>Precio: $7.000</p>
+                    </li>
+                    <li>
+                        <img src="limonadanatural.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Limonada Natural</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $5.000</p>
+                    </li>
+                    <li>
+                        <img src="limonadahierba.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Limonada hierba buena</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $6.000</p>
+                    </li>
+                    <li>
+                        <img src="limonadahirba.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Jugo en agua</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $5.000</p>
+                    </li>
+                    
+                    <li>
+                        <img src="limonadahira.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Jugo en leche</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $6.000</p>
+                    </li>
+                    
+                    <li>
+                        <img src="frappe.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Frappe de cafe</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $8.000</p>
+                    </li> 
+                    <li>
+                        <img src="sodaitaliana.jpeg" alt="Limonada Natural" style="width:100px;height:100px;">
+                        <h4>Soda Italiana de frutos rojos/frutos amarillos</h4>
+                        <p>Descripción breve del refresco.</p>
+                        <p>Precio: $6.000</p>
+                    </li>
+                    <!-- Añadir más ítems de bebidas aquí -->
+                </ul>
+            </div>
+            <div class="menu-category">
+                <h3>Cafés</h3>
+                <ul>
+                    <li>
+                        <img src="cafe_especial.jpg" alt="Café Especial" style="width:100px;height:100px;">
+                        <h4>Café Especial</h4>
+                        <p>Descripción breve del café especial.</p>
+                        <p>Precio: $5.00</p>
+                    </li>
+                    <li>
+                        <img src="latte.jpg" alt="Latte" style="width:100px;height:100px;">
+                        <h4>Latte</h4>
+                        <p>Descripción breve del latte.</p>
+                        <p>Precio: $4.50</p>
+                    </li>
+                    <li>
+                        <img src="espresso.jpg" alt="Espresso" style="width:100px;height:100px;">
+                        <h4>Espresso</h4>
+                        <p>Descripción breve del espresso.</p>
+                        <p>Precio: $3.50</p>
+                    </li>
+                    <!-- Añadir más ítems de cafés aquí -->
+                </ul>
+            </div>
+            <div class="menu-category">
+                <h3>Licores</h3>
+                <ul>
+                    <li>
+                        <img src="whiskey.jpg" alt="Whiskey" style="width:100px;height:100px;">
+                        <h4>Whiskey</h4>
+                        <p>Descripción breve del whiskey.</p>
+                        <p>Precio: $8.00</p>
+                    </li>
+                    <li>
+                        <img src="vodka.jpg" alt="Vodka" style="width:100px;height:100px;">
+                        <h4>Vodka</h4>
+                        <p>Descripción breve del vodka.</p>
+                        <p>Precio: $7.00</p>
+                    </li>
+                    <!-- Añadir más ítems de licores aquí -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Una breve historia sobre el café bar Místico Fusaga y su equipo.</p>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos">
+        <h2>Eventos</h2>
+        <p>Información sobre próximos eventos y cómo hacer reservas.</p>
+    </section>
+
+    <!-- Botón de Reservas -->
+    <div class="reserve-button-container">
+        <a href="formularioagenda.html" class="cta-button">Reservar Ahora</a>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Dirección: Calle 123, Ciudad</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
